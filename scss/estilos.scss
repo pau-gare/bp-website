@@ -294,8 +294,7 @@ a {
 
 .titulo__servicios {
 	@include subtitulo;
-	font-weight: bold;
-	margin-bottom: $margin;
+	margin: 40px 0;
 }
 
 .subtitulo__servicios {
@@ -379,10 +378,30 @@ a {
 .titulo__proyectos {
 	@extend .titulo__servicios;
 }
-.subtitulo__proyectos {
-	@extend .subtitulo__servicios;
-	@include centrado;
-	margin-bottom: 60px;
+#carouselExampleControls {
+
+	.carousel-item {
+		height: 400px;
+		margin-bottom: $margin;
+
+			img {
+				height: 400px;
+				margin: 0 auto;
+				border-radius: $border;
+			}
+	}
+
+	.carousel-control-prev-icon {
+		height: 40px;
+		width: 40px;
+		background-image: url(../media/arrowright.svg);
+		}
+
+	.carousel-control-next-icon {
+		height: 40px;
+		width: 40px;
+		background-image: url(../media/arrowleft.svg);
+		}
 }
 
 #seccion__proyectos {
@@ -390,29 +409,37 @@ a {
 
 	.seccion__proyectos--fondo {
 		background-color: $color-fg;
-		border-radius: 30px 30px 0 0;
-	}
-
-	.seccion__proyectos--fondo2 {
-		background-color: $color-vw;
-		padding: 20px;
-		border-radius: 0 0 30px 30px;
-		margin-bottom: 80px;
+		border-radius: $border;
+		width: 300px;
+		margin: 0 auto;
 	}
 
 	.seccion__proyectos__titulo {
-	color: $color-cg;
-	font-family: $fuente-poppins;
-	font-size: $font-size*2;
-	text-align: center;
-	margin-top: $margin;
+		padding: 10px;
+		color: $color-cg;
+		font-family: $fuente-sans;
+		font-size: $font-size*1.7;
+		font-weight: 400;
+		text-align: center;
+		margin-top: $margin;
 	}
 
-	p {
-	font-size:	$font-size*1.2;
-	font-family: $fuente-sans;
-	text-align: center;
+	.seccion__proyectos--fondo2 {
+		padding: 20px;
+		border-radius: 0 0 30px 30px;
+		margin-bottom: 80px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: $color-fg;
+		border-radius: $border;
 	}
+
+		p {
+			font-size:	$font-size*1.1;
+			font-family: $fuente-sans;
+			text-align: center;
+			margin-bottom: 0;
+		}
 }
 
 //corresponde a blog
@@ -630,7 +657,7 @@ a {
 	font-family
 	: $fuente-sans;
 	background-color: $color-wb;
-	font-size: $font-size*2;
+	font-size: $font-size*1.6;
 	text-align:	center;
 	padding: 10px;
 

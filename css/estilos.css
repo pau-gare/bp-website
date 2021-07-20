@@ -258,16 +258,15 @@ a {
   margin-top: 80px;
   margin-bottom: 60px;
   color: #7676B6;
-  font-weight: bold;
-  margin-bottom: 40px; }
+  margin: 40px 0; }
 
-.subtitulo__servicios, .subtitulo__proyectos {
+.subtitulo__servicios {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 60px; }
-  .subtitulo__servicios .fa-circle, .subtitulo__proyectos .fa-circle {
+  .subtitulo__servicios .fa-circle {
     font-size: 0.71429rem; }
 
 .btn {
@@ -330,32 +329,53 @@ a {
 .footer__columna__1__menu--line {
   line-height: 0.8; }
 
-.subtitulo__proyectos {
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 60px; }
+#carouselExampleControls .carousel-item {
+  height: 400px;
+  margin-bottom: 40px; }
+  #carouselExampleControls .carousel-item img {
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 30px; }
+
+#carouselExampleControls .carousel-control-prev-icon {
+  height: 40px;
+  width: 40px;
+  background-image: url(../media/arrowright.svg); }
+
+#carouselExampleControls .carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  background-image: url(../media/arrowleft.svg); }
 
 #seccion__proyectos {
   max-width: 1000px;
   margin: auto; }
   #seccion__proyectos .seccion__proyectos--fondo {
     background-color: #7ABE7B;
-    border-radius: 30px 30px 0 0; }
-  #seccion__proyectos .seccion__proyectos--fondo2 {
-    background-color: #F7EBEC;
-    padding: 20px;
-    border-radius: 0 0 30px 30px;
-    margin-bottom: 80px; }
+    border-radius: 30px;
+    width: 300px;
+    margin: 0 auto; }
   #seccion__proyectos .seccion__proyectos__titulo {
+    padding: 10px;
     color: #0E0E0E;
-    font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
     text-align: center;
     margin-top: 40px; }
+  #seccion__proyectos .seccion__proyectos--fondo2 {
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 80px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #7ABE7B;
+    border-radius: 30px; }
   #seccion__proyectos p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Open Sans", sans-serif;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
 
 #seccion__blog {
   max-width: 1000px;
@@ -527,7 +547,7 @@ a {
 #contacto {
   font-family: "Open Sans", sans-serif;
   background-color: #7676B6;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   padding: 10px; }
   #contacto a {
@@ -808,7 +828,7 @@ a {
     font-size: 1.6rem; }
   .titulo__servicios, .titulo__proyectos {
     font-size: 2rem; }
-  .subtitulo__servicios, .subtitulo__proyectos {
+  .subtitulo__servicios {
     width: 500px;
     margin: 20px auto; }
   .card-body {
