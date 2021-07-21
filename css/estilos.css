@@ -525,15 +525,20 @@ p {
 
 #formulario {
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
   #formulario .formulario__titulo {
+    width: 35vw;
     font-family: "Open Sans", sans-serif;
-    font-size: 3.3rem;
+    font-size: 3rem;
     font-weight: lighter;
     color: #0E0E0E;
     margin: 40px 0; }
   #formulario form {
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 160px;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2rem;
     height: 600px;

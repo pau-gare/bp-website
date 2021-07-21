@@ -629,17 +629,20 @@ p {
 
 #formulario {
 	@include centrado;
+	@include flex-row-be;
 
 	.formulario__titulo {
+		width: 35vw;
 		font-family: $fuente-sans;
-		font-size: $font-size*3.3;
+		font-size: $font-size*3;
 		font-weight: lighter;
 		color: $color-cg;
 		margin: $margin 0;
 	}
 
 	form {
-		margin-bottom: $margin*2.5;
+		margin-top: $margin*1.5;
+		margin-bottom: $margin*4;
 		font-family: $fuente-sans;
 		font-size: $font-size*1.2;
 		height: 600px;
