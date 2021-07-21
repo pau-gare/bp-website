@@ -377,6 +377,71 @@ a {
     text-align: center;
     margin-bottom: 0; }
 
+.fondo__nosotros {
+  background-color: #F7EBEC; }
+
+.nos__imagen {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.nos__imagen--estilo {
+  border-radius: 30px;
+  height: 400px;
+  width: 675px; }
+
+.nos__fondo {
+  font-size: 1.7rem;
+  text-align: center; }
+  .nos__fondo h3 {
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    color: #0E0E0E;
+    display: block;
+    margin: 40px; }
+  .nos__fondo .nos__fondo__titulo1 {
+    animation: fadeIn4 10s linear; }
+
+@keyframes fadeIn4 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+  .nos__fondo .nos__fondo__titulo2 {
+    animation: fadeIn5 10s linear; }
+
+@keyframes fadeIn5 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+  .nos__fondo .nos__fondo__titulo3 {
+    animation: fadeIn6 10s linear; }
+
+@keyframes fadeIn6 {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+p {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 40px; }
+
+.nos__fondo--margen {
+  margin-bottom: 80px; }
+
 #seccion__blog {
   max-width: 1000px;
   margin: auto;
@@ -451,64 +516,6 @@ a {
   font-weight: bold;
   font-size: 1.4em; }
 
-.fondo__nosotros {
-  background-color: #F7EBEC; }
-
-.nos__imagen {
-  display: block;
-  margin-top: 40px;
-  text-align: center; }
-
-.nos__imagen--estilo {
-  border-radius: 30px;
-  height: 400px; }
-
-.nos__fondo {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px;
-  max-height: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-  .nos__fondo h3 {
-    font-weight: 300; }
-
-.nos__fondo__titulo {
-  font-family: "Poppins", sans-serif;
-  color: #0E0E0E;
-  width: 90px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: columns;
-  justify-content: left;
-  align-items: center;
-  transition-property: width;
-  transition-duration: 1s;
-  transition-timing-function: ease-out; }
-
-.nos__fondo__titulo:hover {
-  width: 280px; }
-
-.icono__nos {
-  height: 90px; }
-
-.icono__valor {
-  width: 90px; }
-
-.icono__mision {
-  width: 90px; }
-
-.nos__fondo__parrafo {
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 40px; }
-
 #formulario {
   max-width: 1000px;
   margin: auto; }
@@ -575,7 +582,9 @@ a {
     justify-content: space-between; }
   #footer img {
     height: 40px; }
-  #footer .footer__columna__1__menu a {
+  #footer .footer__columna__1__menu p {
+    text-align: left; }
+  #footer a {
     color: #E3B23C; }
   #footer .footer__columna__2 p {
     margin-bottom: 60px; }

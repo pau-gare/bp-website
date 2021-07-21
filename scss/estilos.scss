@@ -442,6 +442,79 @@ a {
 		}
 }
 
+//corresponde a seccion nosotros
+.fondo__nosotros {
+	background-color: $color-vw;
+}
+
+.nos__imagen {
+	display: block;
+	margin-top: $margin;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.nos__imagen--estilo {
+	border-radius: 30px;
+	height: 400px;
+	width: 675px;
+}
+
+.nos__fondo {
+	font-size: $font-size*1.7;
+	text-align: center;
+
+		h3 {
+			font-weight: 300;
+			font-family: $fuente-poppins;
+			color: $color-cg;
+			display: block;
+			margin: $margin;
+		}
+
+		.nos__fondo__titulo1 {
+			animation: fadeIn4 10s linear;
+ 	 	}
+
+		 	@keyframes fadeIn4 {
+				0% {opacity:0;}
+				20% {opacity:1;}
+				100% {opacity:1;}
+			}
+
+		.nos__fondo__titulo2 {
+			animation: fadeIn5 10s linear;
+ 	 	}
+
+		 	@keyframes fadeIn5 {
+				0% {opacity:0;}
+				50% {opacity:1;}
+				100% {opacity:1;}
+			}
+
+		.nos__fondo__titulo3 {
+			animation: fadeIn6 10s linear;
+ 	 	}
+
+		 	@keyframes fadeIn6 {
+				0% {opacity:0;}
+				70% {opacity:1;}
+				100% {opacity:1;}
+				}
+}
+
+p {
+	@include centrado;
+	text-align: center;
+	font-family: $fuente-sans;
+	font-size: $font-size*1.1;
+	margin-bottom: $margin;
+}
+
+.nos__fondo--margen {
+	margin-bottom: $margin*2;
+}
+
 //corresponde a blog
 
 #seccion__blog {
@@ -539,76 +612,6 @@ a {
 	font-size:	1.4em;
 }
 
-//corresponde a seccion nosotros
-.fondo__nosotros {
-	background-color: $color-vw;
-}
-
-.nos__imagen {
-	display: block;
-	margin-top: $margin;
-	text-align: center;
-}
-
-.nos__imagen--estilo {
-	border-radius: 30px;
-	height: 400px;	
-}
-
-.nos__fondo {
-	font-size: $font-size*1.8;
-	text-align: center;
-	margin: 20px 0;
-	padding: 10px;
-	max-height: 110px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center; 
-
-		h3 {
-			font-weight: 300;
-		}
-}
-
-.nos__fondo__titulo {
-	font-family: $fuente-poppins;
-	color: $color-cg;
-	width: 90px;
-	overflow: hidden;
-	display: flex;
-	flex-direction: columns;
-	justify-content: left;
-	align-items: center;
-	transition-property: width;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-}
-
-.nos__fondo__titulo:hover {
-	width: 280px;
-}
-
-.icono__nos {
-	height: 90px;
-}
-
-.icono__valor {
-	width: 90px;
-}
-
-.icono__mision {
-	width: 90px;
-}
-
-.nos__fondo__parrafo {
-	@include centrado;
-	text-align: center;
-	font-family: $fuente-sans;
-	font-size: $font-size*1.2;
-	margin-bottom: $margin;
-}
-
 //corresponde a contacto
 
 #formulario {
@@ -690,7 +693,13 @@ a {
 			height: 40px;
 		}
 
-	.footer__columna__1__menu a {
+	.footer__columna__1__menu 
+
+		p {
+			text-align: left;
+		}
+		
+		a {
 		color: $color-an;
 	}
 
