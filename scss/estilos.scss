@@ -522,6 +522,43 @@ p {
 	display: grid;
 	grid-template-columns: 20vw 60vw;
 	justify-content: space-around;
+	margin-top: $margin;
+	margin-bottom: $margin;
+
+	.tags {
+	font-family: $fuente-sans;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: left;
+
+		a {
+			color: $color-cg;
+		}
+
+		.tags__1 {
+			padding: 3px;
+			border: 2px solid $color-cg;
+			border-radius: 30px;
+			width: 70px;
+		}
+
+		.tags__2 {
+			padding: 3px;
+			border: 2px solid $color-cg;
+			border-radius: 30px;
+			width: 90px;
+		}
+
+		.tags__3 {
+			padding: 3px;
+			border: 2px solid $color-cg;
+			border-radius: 30px;
+			width: 75px;
+		}
+}
+
 
 	.seccion__blog__titulo {
 		margin-top: $margin;
@@ -544,31 +581,6 @@ p {
 		grid-template-columns: auto auto;
 		grid-row-gap: 20px;
 		grid-column-gap: 20px;
-	}
-}
-
-.tags {
-	font-family: $fuente-sans;
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-
-	div {
-		text-align: left;
-		padding: 3px;
-		border: 2px solid $color-cg;
-		border-radius: 30px;
-		overflow: hidden;	
-		width: 22px; 
-		height: 22px;
-		transition-property: width;
-	  	transition-duration: 1s;
-	  	transition-timing-function: ease-out;
-	}
-
-	div:hover {
-	width: 94px; 
 	}
 }
 
@@ -603,6 +615,7 @@ p {
 .estilo:hover {
 	background-color: #E3B23C;
 	border: 2px solid #fffafa;
+	cursor: pointer;
 }
 
 .titulo__entrada {
@@ -698,7 +711,7 @@ p {
 		p {
 			text-align: left;
 		}
-		
+
 		a {
 		color: $color-an;
 	}
