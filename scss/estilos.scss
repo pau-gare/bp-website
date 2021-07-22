@@ -30,7 +30,7 @@ h2 {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: $text-decoration;
 }
 
 #header {
@@ -57,7 +57,7 @@ a {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
-		margin-left: auto;
+		margin-left: $margin-center;
 		margin-top: 20px;
 	}
 
@@ -66,7 +66,7 @@ a {
 	}
 
 		a:hover {
-		transition: 250ms ease-out;
+		transition: $transition;
 		color: $color-an;
 	}
 
@@ -214,7 +214,7 @@ a {
 	}
 
 	.proyectos__card:hover {
-		transition: 250ms ease-out;
+		transition: $transition;
 		transform: scale(1.1);
 	}
 
@@ -284,30 +284,18 @@ a {
 		}
 
 	.blog__entrada__parrafo--margin {
-		margin-top: 37px;
+		margin-top: 40px;
 	}
 }
 
 //corresponde a seccion servicios
 .header__menu__item--hover:hover {
-	text-decoration: none;
+	text-decoration: $text-decoration;
 }
 
 .titulo__servicios {
 	@include subtitulo;
-	margin: 40px 0;
-}
-
-.subtitulo__servicios {
-	text-align: center;
-	font-family: $fuente-sans;
- 	font-size: $font-size*1.4;
- 	font-style: italic;
- 	margin-bottom: 60px;
-
- 	.fa-circle {
-		font-size: $font-size / 1.4;
-	}
+	margin: $margin 0;
 }
 
 .btn {
@@ -334,7 +322,7 @@ a {
 
 .servicios__img {
 	display: block;
-	margin: auto;
+	margin: $margin-center;
 	height: 400px;
 }
 
@@ -367,7 +355,7 @@ a {
 }
 
 .contacto--hover:hover {
-	text-decoration: none;
+	text-decoration: $text-decoration;
 }
 
 .footer__columna__1__menu--line {
@@ -412,7 +400,7 @@ a {
 		background-color: $color-fg;
 		border-radius: $border;
 		width: 300px;
-		margin: 0 auto;
+		margin: 0 $margin-center;
 	}
 
 	.seccion__proyectos__titulo {
@@ -529,9 +517,7 @@ p {
 	.tags {
 	font-family: $fuente-sans;
 	height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	@include flex-col-ar;
 	text-align: left;
 
 		a {
@@ -541,21 +527,21 @@ p {
 		.tags__1 {
 			padding: 3px;
 			border: 2px solid $color-cg;
-			border-radius: 30px;
+			border-radius: $border;
 			width: 70px;
 		}
 
 		.tags__2 {
 			padding: 3px;
 			border: 2px solid $color-cg;
-			border-radius: 30px;
+			border-radius: $border;
 			width: 90px;
 		}
 
 		.tags__3 {
 			padding: 3px;
 			border: 2px solid $color-cg;
-			border-radius: 30px;
+			border-radius: $border;
 			width: 75px;
 		}
 }
@@ -610,7 +596,7 @@ p {
 	padding: 20px;
 	background-color: #F7EBEC;
 	border: 2px solid $color-cg;
-	border-radius: 30px;
+	border-radius: $border;
 }
 
 .estilo:hover {
@@ -706,11 +692,11 @@ p {
 
 	.contacto__boton:hover {
 		background-color: $color-an;
-		transition: 250ms ease-out;
+		transition: $transition;
 	}
 
 	.contacto__boton--estilo {
-		text-decoration: none;
+		text-decoration: $text-decoration;
 	}
 }
 
@@ -745,7 +731,7 @@ p {
 
 	.footer__columna__2 {
 		p {
-			margin-bottom: 60px
+			margin-bottom: 60px;
 		} 
 
 		img {
@@ -755,7 +741,7 @@ p {
 }
 
 	.footer__columna__1__menu--hover {
-		text-decoration: none;
+		text-decoration: $text-decoration;
 	}
 }
 
