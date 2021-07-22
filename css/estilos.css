@@ -618,7 +618,7 @@ p {
 
 @media all and (max-width: 992px) {
   #fondo {
-    background-image: url(../media/fondo-lg.png); }
+    background-image: url(../media/fondo-lg-09.png); }
   #header .header--centrado {
     max-width: 800px;
     margin: auto; }
@@ -629,28 +629,32 @@ p {
   #portada {
     max-width: 800px;
     margin: auto;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 40px; }
     #portada .portada__titulo {
       max-width: 40vw;
       margin: 0 auto 30px auto;
-      font-size: 2.5rem;
-      overflow-wrap: break-word;
-      animation: 2s titulo-desliza;
-      animation-delay: 1s;
-      animation-timing-function: ease-out; }
-  @keyframes titulo-desliza {
-    from {
-      margin-left: -500px; }
-    to {
-      margin-left: -2px; } }
+      font-size: 2.3rem;
+      margin-bottom: 20px; }
     #portada .portada__img {
-      margin: 20px;
       max-width: 60vw;
-      height: 230px; }
+      height: 300px; }
+    #portada .portada__subtitulo {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-top: 20px; }
   #modulo {
-    margin: 50px auto; }
-    #modulo .modulo__item {
-      font-size: 1rem; }
+    max-width: 800px;
+    margin: auto; }
+    #modulo p {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      line-height: 1.5; }
+  .subtitulo {
+    font-size: 2.1rem;
+    margin-top: 60px;
+    margin-bottom: 40px; }
   #servicios {
     max-width: 800px;
     margin: auto;
@@ -662,6 +666,10 @@ p {
     #servicios .servicios__parrafo {
       font-family: "Open Sans", sans-serif-0.1;
       font-size: 1rem; }
+    #servicios .servicios__imagenes {
+      margin: 20px 0; }
+    #servicios .servicios__descripcion p {
+      font-size: 1.1rem; }
   #proyectos {
     max-width: 800px;
     margin: auto;
@@ -681,7 +689,8 @@ p {
     #testimonios .testimonios__parrafo {
       font-size: 0.95rem;
       max-width: 250px;
-      margin: 5px; }
+      margin: 5px;
+      line-height: 1.4; }
     #testimonios .testimonios__persona {
       font-size: 0.9rem;
       max-width: 250px;
@@ -693,10 +702,9 @@ p {
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 30px; }
+    justify-content: space-around; }
     #blog .blog__entrada {
-      margin: 0 0 50px 0;
+      margin: 0 0 40px 0;
       padding: 20px 20px 30px 20px;
       max-width: 300px; }
     #blog .blog__entrada__titulo {
@@ -722,21 +730,16 @@ p {
     #seccion__proyectos .seccion__proyectos__titulo {
       font-size: 1.4rem; }
   #contacto {
-    font-size: 1.6rem; }
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    #contacto p {
+      font-size: 1.4rem; }
   #footer .footer__columna__1 {
     width: 25vw; }
     #footer .footer__columna__1 img {
       height: 40px; } }
 
 @media all and (max-width: 768px) {
-  #fondo {
-    background-image: url(../media/fondo-md.png); }
-  .subtitulo {
-    font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin: 30px;
-    color: #7676B6; }
   #header {
     height: 60px; }
     #header .header--centrado {
@@ -751,52 +754,54 @@ p {
       margin-top: 10px; }
     #header .header__menu {
       display: none; }
-  #modulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 170px;
-    align-items: center;
-    text-align: center; }
-    #modulo .modulo__item {
-      width: 190px; }
+  #fondo {
+    background-image: url(../media/fondo-md.png); }
   #portada {
-    margin-top: 40px;
+    max-width: 666.66667px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
-    align-content: center; }
+    height: 540px;
+    margin: 30px auto;
+    align-items: center; }
+    #portada .portada__izq {
+      width: 60vw; }
     #portada .portada__titulo {
-      max-width: 666.66667px;
-      margin: auto;
-      margin: 0 auto 30px auto;
-      font-size: 2rem;
-      overflow-wrap: break-word;
-      animation: 2s titulo-desliza;
-      animation-delay: 1s;
-      animation-timing-function: ease-out; }
-  @keyframes titulo-desliza {
-    from {
-      margin-left: -500px; }
-    to {
-      margin-left: 75px; } }
+      max-width: 100%;
+      text-align: center; }
+      #portada .portada__titulo h1 {
+        font-size: 2rem; }
     #portada .portada__subtitulo {
-      margin: 0 auto 30px auto; }
+      font-size: 1.1rem;
+      font-weight: 300;
+      left: 250px; }
     #portada .portada__img {
-      max-width: 666.66667px;
-      margin: auto;
-      height: 220px; }
+      margin-top: 30px;
+      height: 280px; }
+  #modulo {
+    max-width: 666.66667px;
+    margin: auto; }
+    #modulo p {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      line-height: 1.3; }
+  .subtitulo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px;
+    color: #7676B6; }
   #modulo {
     margin: 40px auto; }
-    #modulo .modulo__item {
+    #modulo p {
       font-size: 1rem;
-      padding: 9px;
-      border: 3px solid #7ABE7B; }
+      line-height: 1.3; }
   #servicios {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    height: 200px; }
     #servicios .servicios__titulos {
       max-width: 666.66667px;
       margin: auto;
@@ -806,16 +811,10 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: space-around; }
-    #servicios .servicios__parrafo {
-      max-width: 666.66667px;
-      margin: auto;
-      margin: 20px auto;
-      font-size: 1rem;
-      text-align: center;
-      max-width: 70vw; }
-    #servicios .servicios__img img {
-      display: block;
-      margin: 0 auto 20px auto; }
+    #servicios .servicios__descripcion {
+      display: none; }
+    #servicios .servicios__imagenes {
+      display: none; }
   #proyectos {
     display: flex;
     flex-direction: column;
@@ -856,7 +855,10 @@ p {
     #blog .blog__entrada__parrafo--margin {
       margin-top: 10px; }
   #contacto {
-    font-size: 1.6rem; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #contacto p {
+      font-size: 1.2rem; }
   .titulo__servicios, .titulo__proyectos {
     font-size: 2rem; }
   .subtitulo__servicios {
