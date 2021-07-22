@@ -280,6 +280,7 @@ a {
 			color: $color-cg;
 			font-family: $fuente-sans;
 			font-size: $font-size;
+			text-align: left;
 		}
 
 	.blog__entrada__parrafo--margin {
@@ -673,20 +674,43 @@ p {
 }
 
 #contacto {
-	font-family
-	: $fuente-sans;
-	background-color: $color-wb;
-	font-size: $font-size*1.6;
-	text-align:	center;
-	padding: 10px;
+	margin: $margin*2 auto;
+
+	p {
+		@include centrado;
+		font-family: $fuente-poppins;
+		font-size: $font-size*1.4;
+		text-align:	center;
+		margin: 10px auto;
+	}
+	
+
+	.contacto__boton {
+		display: block;
+		margin: 10px auto;
+		font-family: $fuente-poppins;
+		font-weight: medium;
+		font-size: $font-size*1.1;
+		text-align: center;
+		color: $color-cg;
+		border-radius: $border;
+		background-color: $color-wb;
+		border: 2px solid $color-cg;
+		padding: 10px;
+		width: 150px;
+	}
 
 	a {
 		color: $color-cg;
 	}
 
-	a:hover {
-		color: $color-an;
+	.contacto__boton:hover {
+		background-color: $color-an;
 		transition: 250ms ease-out;
+	}
+
+	.contacto__boton--estilo {
+		text-decoration: none;
 	}
 }
 
