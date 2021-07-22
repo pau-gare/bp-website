@@ -1,0 +1,438 @@
+//breakpoint lg
+@media all and (max-width: 992px) {
+	
+	#fondo {
+		background-image: url(../media/fondo-lg.png);
+	}
+	
+	#header {
+
+		.header--centrado {
+			@include centrado-lg;
+		}
+
+		.header__menu {
+			align-content: right;
+		}
+
+		.header__menu__item {
+			margin: 0 10px;
+		}
+	}
+
+	#portada {
+		@include centrado-lg;
+		margin-top: $margin;
+
+		.portada__titulo {
+			max-width: 40vw;
+			margin: 0 auto 30px auto;
+			font-size: $font-size*2.5;
+			overflow-wrap: break-word;
+			animation: 2s titulo-desliza;
+			animation-delay: 1s;
+			animation-timing-function: ease-out;
+		}
+
+			@keyframes titulo-desliza {
+	  			from {
+	       			margin-left: -500px;
+	   		 	}
+
+		    	to {
+	       			margin-left: -2px;
+	   			}
+	 		}
+
+	 	.portada__img {
+	 		margin: 20px;
+	 		max-width: 60vw;
+	 		height: 230px;
+	 	}
+	}
+
+	#modulo {
+		margin: 50px auto;
+
+		.modulo__item {
+		font-size: $font-size;
+		}
+	}
+
+	#servicios {
+		@include centrado-lg;
+		margin-bottom: $margin;
+
+		.servicios__titulos a {
+			width: 200px;
+		}
+
+		.servicios__titulos--breakpoint {
+			font-size: $font-size*1.2;
+
+		}
+
+		.servicios__parrafo {
+			font-family: $fuente-sans - 0.1;
+			font-size: $font-size;
+		}
+	}
+
+	#proyectos {
+		@include centrado-lg;
+		margin-bottom: $margin;
+
+		.proyectos__card {
+			width: 220px;
+			margin: 20px 10px;
+		}
+
+			img {
+				height: 190px;
+			}
+
+		.proyectos__titulo {
+			font-size:	$font-size*1.2;
+		}
+	}
+
+	#testimonios {
+		@include centrado-lg;
+		margin: 10px auto;
+		text-align: center;
+
+		.testimonios__parrafo {
+			font-size: $font-size - 0.05;
+			max-width: 250px;
+			margin: 5px;
+		}
+
+		.testimonios__persona {
+			font-size: $font-size - 0.1;
+			max-width: 250px;
+			margin: 5px;
+		}
+
+		.testimonio__persona--margin {
+			margin-top: 25px;
+		}
+	}
+
+	#blog {
+		@include centrado-lg;
+		@include flex-row-ar;
+		margin-bottom: $margin - 10;
+
+		.blog__entrada {
+			margin: 0 0 50px 0;
+			padding: 20px 20px 30px 20px;
+			max-width: 300px;
+		}
+
+		.blog__entrada__titulo {
+			font-size:	$font-size*1.2;
+		}
+
+			p {
+				margin-top: 0px;
+				font-size: $font-size - 0.1;
+			}
+		.blog__entrada__parrafo--margin {
+			margin-top: 0px;
+		}
+	}
+
+	.subtitulo__proyectos {
+		max-width: 700px;
+	}
+
+	#seccion__proyectos {
+		max-width: 700px;
+
+		.seccion__proyectos--fondo {
+			width: 700px;
+		}
+
+		.seccion__proyectos--fondo2 {
+			width: 660px;
+				
+				p {
+				width: 600px;
+				font-size: $font-size;
+				overflow: break-word;
+				margin: auto;
+			}
+		}
+
+		.seccion__proyectos__titulo {
+			font-size: $font-size*1.4;
+		}
+	}
+
+
+	#contacto {
+		font-size: $font-size*1.6;
+	}
+
+	#footer .footer__columna__1 {
+		width: 25vw;
+
+		img {
+			height: 40px;
+		}
+	}
+}
+
+//breakpoint md
+
+@media all and (max-width: 768px) {
+	
+	#fondo {
+		background-image: url(../media/fondo-md.png);
+	}
+
+	.subtitulo {
+		@include subtitulo-md;
+	}
+
+	#header {
+		height: 60px;
+
+		.header--centrado {
+			@include centrado-md;
+		}
+
+		.header__logo {
+			height: 35px;
+			margin-top: 10px;
+		}
+
+		.header__menu-mobile {
+			display: inline-block;
+			height: 35px;
+			margin-top: 10px;
+		}
+
+		.header__menu {
+			display: none;
+		}
+	}
+
+	#modulo {
+		@include flex-col-ar;
+		height: 170px;
+		align-items: center;
+		text-align: center;
+
+		.modulo__item {
+			width: 190px;
+		}
+	}
+
+	#portada {
+		margin-top: 40px;
+		@include flex-col-ar;
+		text-align: center;
+		align-content: center;
+
+		.portada__titulo {
+			@include centrado-md;
+			margin: 0 auto 30px auto;
+			font-size: $font-size*2;
+			overflow-wrap: break-word;
+			animation: 2s titulo-desliza;
+			animation-delay: 1s;
+			animation-timing-function: ease-out;
+		}
+
+			@keyframes titulo-desliza {
+	  			from {
+	       			margin-left: -500px;
+	   		 	}
+
+		    	to {
+	       			margin-left: 75px;
+	   			}
+	 		}
+	 		
+	 	.portada__subtitulo {
+	 		margin: 0 auto 30px auto;
+	 	} 
+	 		
+	 	.portada__img {
+	 		@include centrado-md;
+	 		height: 220px;
+	 	}
+	}
+
+	#modulo {
+		margin: $margin auto;
+
+		.modulo__item {
+			font-size: $font-size*1;
+			padding: 9px;
+			border: 3px solid $color-fg;
+		}
+	}
+
+	#servicios {
+		@include flex-col-ar;
+
+		.servicios__titulos {
+			@include centrado-md;
+			font-size: $font-size*1.2;
+			height: 200px;
+			width: 202px;
+			@include flex-col-ar;
+		}
+
+		.servicios__parrafo {
+			@include centrado-md;
+			margin: 20px auto;
+			font-size: $font-size;
+			text-align: center;
+			max-width: 70vw;
+		}
+
+		.servicios__img img {
+			display: block;
+			margin: 0 auto 20px auto;
+		}
+	} 
+
+	#proyectos {
+		@include flex-col-ar;
+
+		.proyectos__card {
+			width: 260px;
+			margin: 20px auto;
+
+			img {
+				height: 220px;
+			}
+		}
+
+		.proyectos__titulo {
+			font-size:	$font-size*1.2;
+		}
+	}
+
+	#testimonios {
+		@include flex-col-ar;
+		font-family: $fuente-sans;
+		text-align: center;
+
+		.testimonios__parrafo {
+			margin: 10px auto;
+			font-size: $font-size*1;
+			max-width: 300px;
+			overflow-wrap: break-word;
+		}
+
+		.testimonios__persona {
+			font-size: $font-size / 1.2;
+			margin: auto;
+			max-width: 300px;
+			margin-top: 10px;
+		}
+	}
+
+	#blog {
+		@include flex-col-ar;
+
+		.blog__entrada {
+			margin: 0 auto 30px auto;
+			max-width: 400px;
+			max-height: 100px;
+		}
+
+		.blog__entrada__titulo {
+			font-size:	$font-size*1.2;
+		}
+
+		.blog__entrada__parrafo--margin {
+			margin-top: 10px;
+		}
+	}
+
+	#contacto {
+		font-size: $font-size*1.6;
+	}
+
+	//seccion servicios md
+
+	.titulo__servicios {
+		font-size: $font-size*2;
+	}
+
+	.subtitulo__servicios {
+		width: 500px;
+		margin: 20px auto;
+	}
+
+	.card-body {
+		font-size: $font-size*1.1;
+	}
+
+	//seccion proyectos md
+	.nos__imagen {
+
+		.nos__imagen--estilo {
+			height: 400px;
+			margin-left: 40px;
+		}
+	}
+
+	.nos__fondo__parrafo {
+		width: 500px;
+		font-size: $font-size*1.1;
+	}
+
+	//seccion blog md 
+	#seccion__blog {
+		@include flex-col-ar;
+		align-items: center;
+
+		.caja__derecha {
+			@include flex-col-ar;
+			
+			article {
+				height: 100px;
+				width: 400px;
+
+				h2 {
+					font-size: $font-size*1.1;
+				}
+
+				div {
+					font-size: $font-size;
+				}
+			}
+		}
+	}
+
+
+	#footer {
+		padding: 30px;
+		font-weight: medium;
+		font-size: $font-size*1.1;
+		@include flex-col-ar;
+
+		.footer__columna__1 {
+			width: 25vw;
+		}
+
+		.footer__columna__2 {
+			margin-top: 20px;
+			text-align: center;
+			width: 45vw;
+			overflow: break-word;
+		}
+
+		.footer__columna__2 img {
+			height: 30px;
+			margin-top: 10px;
+		}
+	}
+}
+
