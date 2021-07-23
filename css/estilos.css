@@ -311,6 +311,8 @@ a {
       overflow: break-word;
       max-width: 500px;
       margin: auto; }
+      .card-body .parrafo--estilo p .parrafo__seleccion-estilo {
+        font-weight: 600; }
 
 .contacto--margin {
   margin-top: 40px; }

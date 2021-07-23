@@ -342,6 +342,10 @@ a {
 			overflow: break-word;
 			max-width: 500px;
 			margin: auto;
+
+			.parrafo__seleccion-estilo {
+				font-weight: 600;
+			}
 		}
 	}
 }
