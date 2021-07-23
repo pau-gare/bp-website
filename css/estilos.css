@@ -737,7 +737,49 @@ p {
   #footer .footer__columna__1 {
     width: 25vw; }
     #footer .footer__columna__1 img {
-      height: 40px; } }
+      height: 40px; }
+  .titulo__servicios, .titulo__proyectos {
+    font-size: 2.2rem; }
+  .btn {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    width: 270px;
+    margin: 0px 15px 15px 15px;
+    padding: 15px; }
+  .servicios__img {
+    height: 350px; }
+  .card-body .parrafo--estilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .card-body .parrafo--estilo p {
+      font-size: 1rem;
+      padding: 20px;
+      margin-bottom: 40px;
+      max-width: 400px; }
+  #carouselExampleControls .carousel-item {
+    height: 300px;
+    margin-bottom: 30px; }
+    #carouselExampleControls .carousel-item img {
+      height: 350px;
+      margin: 0 auto;
+      border-radius: 30px; }
+  #seccion__proyectos {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px; }
+    #seccion__proyectos .seccion__proyectos--fondo {
+      width: 300px;
+      margin: 0 auto; }
+    #seccion__proyectos .seccion__proyectos__titulo {
+      padding: 10px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-top: 40px; }
+    #seccion__proyectos .seccion__proyectos--fondo2 {
+      margin: auto;
+      padding: 20px; } }
 
 @media all and (max-width: 768px) {
   #header {
@@ -866,9 +908,13 @@ p {
     margin: 20px auto; }
   .card-body {
     font-size: 1.1rem; }
-  .nos__imagen .nos__imagen--estilo {
-    height: 400px;
-    margin-left: 40px; }
+  #carouselExampleControls .carousel-item {
+    height: 250px;
+    margin-bottom: 30px; }
+    #carouselExampleControls .carousel-item img {
+      height: 250px;
+      margin: 0 auto;
+      border-radius: 30px; }
   .nos__fondo__parrafo {
     width: 500px;
     font-size: 1.1rem; }

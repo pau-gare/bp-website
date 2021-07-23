@@ -197,6 +197,76 @@
 			height: 40px;
 		}
 	}
+
+	//seccion servicios lg
+	.titulo__servicios {
+		font-size: $font-size*2.2;
+	}
+
+	.btn {
+	@include centrado-lg;
+	font-size:	$font-size*1.2;
+	width: 270px;
+	margin: 0px 15px 15px 15px;
+	padding: 15px;
+	}
+
+	.servicios__img {
+	height: 350px;
+	}
+
+	.card-body {
+
+		.parrafo--estilo {
+			@include flex-col-ar;
+
+			p {
+				font-size:	$font-size*1;
+				padding: 20px;
+				margin-bottom: $margin;
+				max-width: 400px;
+			}
+		}
+	}
+
+	//seccion proyectos lg
+	#carouselExampleControls {
+
+		.carousel-item {
+			height: 300px;
+			margin-bottom: $margin - 10;
+
+				img {
+					height: 350px;
+					margin: 0 auto;
+					border-radius: $border;
+			}
+		}
+	}
+
+	#seccion__proyectos {
+	@include centrado-lg;
+	margin-bottom: $margin;
+
+		.seccion__proyectos--fondo {
+			width: 300px;
+			margin: 0 $margin-center;
+		}
+
+		.seccion__proyectos__titulo {
+			padding: 10px;
+			font-size: $font-size*1.5;
+			font-weight: 400;
+			margin-top: $margin;
+		}
+
+		.seccion__proyectos--fondo2 {
+			margin: auto;
+			padding: 20px;
+		}
+	}
+
+	//seccion nosotros lg
 }
 
 //breakpoint md
@@ -387,11 +457,17 @@
 	}
 
 	//seccion proyectos md
-	.nos__imagen {
+	#carouselExampleControls {
 
-		.nos__imagen--estilo {
-			height: 400px;
-			margin-left: 40px;
+		.carousel-item {
+			height: 250px;
+			margin-bottom: $margin - 10;
+
+				img {
+					height: 250px;
+					margin: 0 auto;
+					border-radius: $border;
+			}
 		}
 	}
 
