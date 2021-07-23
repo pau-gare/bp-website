@@ -287,6 +287,27 @@
 		}
 	}
 
+	//corresponde a contacto lg
+	#formulario {
+		@include centrado-lg;
+
+		.formulario__titulo {
+			font-size: $font-size*2.7;
+		}
+
+		form {
+			font-size: $font-size*1.1;
+
+			input {
+				width: 300px;
+			}
+
+		textarea {
+				width: 350px;
+			}
+		}
+	}
+
 	#footer {
 		padding: 30px;
 		font-weight: medium;
@@ -545,6 +566,14 @@
 		@include flex-col-ar;
 		align-items: center;
 
+		.seccion__blog__titulo {
+			margin-top: 0;
+		}
+
+		.tags {
+			align-items: center;
+		}
+
 		.caja__derecha {
 			@include flex-col-ar;
 			
@@ -559,6 +588,31 @@
 				div {
 					font-size: $font-size;
 				}
+			}
+		}
+	}
+
+	//corresponde a contacto lg
+	#formulario {
+		@include flex-col-ar;
+		@include centrado-md;
+		align-items: center;
+
+		.formulario__titulo {
+			font-size: $font-size*2.2;
+			margin-right: 100px;
+		}
+
+		form {
+			font-size: $font-size*1;
+			margin-top: $margin / 2;
+
+			input {
+				width: 350px;
+			}
+
+		textarea {
+				width: 350px;
 			}
 		}
 	}
