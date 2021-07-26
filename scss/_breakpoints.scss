@@ -383,10 +383,14 @@
 			}
 		}
 
+		.portada__subtitulo--container {
+			@include centrado-md;
+			margin-left: 12vw;
+		}
+
 		.portada__subtitulo {
 	 		font-size: $font-size*1.1;
 	 		font-weight: 300;
-	 		left: 250px;
  		}
 
 		.portada__img {
@@ -420,22 +424,24 @@
 
 	#servicios {
 		@include flex-col-ar;
-		height: 200px;
+		height: 950px;
+		align-items: center;
+		margin-bottom: 30px;
 
 		.servicios__titulos {
 			@include centrado-md;
 			font-size: $font-size*1.2;
-			height: 200px;
+			height: 30px;
 			width: 202px;
-			@include flex-col-ar;
 		}
 
 		.servicios__descripcion {
 			display: none;
 		}
 
-		.servicios__imagenes {
-			display: none;
+		.servicios__imagenes img {
+			height: 200px;
+			margin: $margin - 30px;
 		}
 	} 
 
@@ -460,6 +466,10 @@
 		@include flex-col-ar;
 		font-family: $fuente-sans;
 		text-align: center;
+
+		.testimonios__container {
+			margin-bottom: 10px;
+		}
 
 		.testimonios__parrafo {
 			margin: 10px auto;

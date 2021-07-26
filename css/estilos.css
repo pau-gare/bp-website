@@ -141,12 +141,11 @@ a {
   margin: 80px; }
 
 #servicios {
-  height: 500px; }
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
   #servicios .servicios__titulos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  #servicios .servicios__titulos a {
     font-family: "Poppins", sans-serif;
     font-weight: medium;
     font-size: 1.4rem;
@@ -156,27 +155,19 @@ a {
     background-color: #E3B23C;
     border: 2px solid #E3B23C;
     padding: 11px; }
-  #servicios .servicios__titulos a:hover {
+  #servicios .servicios__titulos:hover {
     transition: 250ms ease-out;
     background-color: #7676B6;
     border: 2px solid #fffafa; }
-  #servicios .servicios__imagenes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    #servicios .servicios__imagenes img {
-      margin: 40px 0;
-      height: 250px; }
-  #servicios .servicios__descripcion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    #servicios .servicios__descripcion p {
-      max-width: 250px;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1.3rem;
-      text-align: center;
-      color: #0E0E0E; }
+  #servicios .servicios__imagenes img {
+    margin: 40px 0;
+    height: 250px; }
+  #servicios .servicios__descripcion p {
+    max-width: 250px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #0E0E0E; }
 
 #proyectos {
   display: flex;
@@ -853,10 +844,13 @@ p {
       text-align: center; }
       #portada .portada__titulo h1 {
         font-size: 2rem; }
+    #portada .portada__subtitulo--container {
+      max-width: 625px;
+      margin: auto;
+      margin-left: 12vw; }
     #portada .portada__subtitulo {
       font-size: 1.1rem;
-      font-weight: 300;
-      left: 250px; }
+      font-weight: 300; }
     #portada .portada__img {
       margin-top: 30px;
       height: 280px; }
@@ -882,20 +876,20 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 200px; }
+    height: 950px;
+    align-items: center;
+    margin-bottom: 30px; }
     #servicios .servicios__titulos {
       max-width: 625px;
       margin: auto;
       font-size: 1.2rem;
-      height: 200px;
-      width: 202px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
+      height: 30px;
+      width: 202px; }
     #servicios .servicios__descripcion {
       display: none; }
-    #servicios .servicios__imagenes {
-      display: none; }
+    #servicios .servicios__imagenes img {
+      height: 200px;
+      margin: 10px; }
   #proyectos {
     display: flex;
     flex-direction: column;
@@ -913,6 +907,8 @@ p {
     justify-content: space-around;
     font-family: "Open Sans", sans-serif;
     text-align: center; }
+    #testimonios .testimonios__container {
+      margin-bottom: 10px; }
     #testimonios .testimonios__parrafo {
       margin: 10px auto;
       font-size: 1rem;

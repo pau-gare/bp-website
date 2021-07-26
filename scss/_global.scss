@@ -153,12 +153,9 @@ a {
 
 #servicios {
 	height: 500px;
+	@include flex-row-be;
 
 	.servicios__titulos {
-		@include flex-row-be;
-	}
-
-	.servicios__titulos a {
 		font-family: $fuente-poppins;
 		font-weight: medium;
 		font-size: $font-size*1.4;
@@ -170,12 +167,11 @@ a {
 		padding: 11px; 
 	}
 
-	.servicios__titulos a:hover {
-		@include servicios-hover;
+	.servicios__titulos:hover {
+			@include servicios-hover;
 	}
 
 	.servicios__imagenes {
-		@include flex-row-be;
 		
 		img {
 			margin: 40px 0;
@@ -184,7 +180,6 @@ a {
 	}
 
 	.servicios__descripcion {
-		@include flex-row-be;
 			
 		p {
 			max-width: 250px;
