@@ -943,7 +943,15 @@ p {
     width: 500px;
     margin: 20px auto; }
   .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     font-size: 1.1rem; }
+    .card-body img {
+      height: 280px; }
+    .card-body .parrafo--estilo p {
+      padding: 0;
+      margin-bottom: 20px; }
   #carouselExampleControls .carousel-item {
     height: 250px;
     margin-bottom: 30px; }
@@ -968,7 +976,8 @@ p {
       max-width: 625px;
       margin: auto;
       font-size: 1rem;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      padding: 0 40px; }
   #seccion__blog {
     display: flex;
     flex-direction: column;
@@ -988,17 +997,22 @@ p {
         #seccion__blog .caja__derecha article h2 {
           font-size: 1.1rem; }
         #seccion__blog .caja__derecha article div {
-          font-size: 1rem; }
+          font-size: 1rem;
+          margin-top: 10px; }
+          #seccion__blog .caja__derecha article div .esconder {
+            display: none; }
   #formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     max-width: 625px;
     margin: auto;
-    align-items: center; }
+    align-items: left;
+    padding-left: 200px; }
     #formulario .formulario__titulo {
       font-size: 2.2rem;
-      margin-right: 100px; }
+      width: 52vw;
+      margin-top: 20px; }
     #formulario form {
       font-size: 1rem;
       margin-top: 20px; }
@@ -1045,4 +1059,33 @@ p {
     margin: 20px; }
     #contacto p {
       font-size: 1.1rem;
-      padding: 0 20px; } }
+      padding: 0 20px; }
+  #seccion__blog .caja__derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px; }
+    #seccion__blog .caja__derecha article {
+      height: 100px;
+      width: 300px; }
+      #seccion__blog .caja__derecha article h2 {
+        font-size: 1.1rem; }
+      #seccion__blog .caja__derecha article div {
+        margin-top: 5px;
+        font-size: 0.9rem; }
+        #seccion__blog .caja__derecha article div .esconder {
+          display: none; }
+  #formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: auto;
+    align-items: left;
+    padding-left: 140px; }
+    #formulario .formulario__titulo {
+      font-size: 2rem; }
+    #formulario form input {
+      width: 250px; }
+    #formulario form textarea {
+      width: 250px; } }

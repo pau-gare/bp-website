@@ -526,7 +526,17 @@
 	}
 
 	.card-body {
+		@include flex-col-ar;
 		font-size: $font-size*1.1;
+
+		img {
+			height: 280px;
+		}
+
+		.parrafo--estilo p {
+			padding: 0;
+			margin-bottom: $margin / 2;
+		}
 	}
 
 	//seccion proyectos md
@@ -568,6 +578,7 @@
 			@include centrado-md;
 			font-size: $font-size*1;
 			margin-bottom: $margin;
+			padding: 0 $margin;
 		}
 	}
 
@@ -598,6 +609,11 @@
 
 				div {
 					font-size: $font-size;
+					margin-top: 10px;
+
+					.esconder {
+						display: none;
+					}
 				}
 			}
 		}
@@ -607,11 +623,13 @@
 	#formulario {
 		@include flex-col-ar;
 		@include centrado-md;
-		align-items: center;
+		align-items: left;
+		padding-left: 200px;
 
 		.formulario__titulo {
 			font-size: $font-size*2.2;
-			margin-right: 100px;
+			width: 52vw;
+			margin-top: $margin / 2;
 		}
 
 		form {
@@ -628,6 +646,8 @@
 		}
 	}
 }
+
+//breakpoint xs
 
 @media all and (max-width: 600px) {
 	#header {
@@ -688,6 +708,58 @@
 			p {
 			font-size: $font-size*1.1;
 			padding: 0 20px;
+		}
+	}
+
+	//corresponde a blog xs
+	#seccion__blog {
+
+		.caja__derecha {
+			@include flex-col-ar;
+			margin-top: $margin / 2;
+			
+			article {
+				height: 100px;
+				width: 300px;
+
+				h2 {
+					font-size: $font-size*1.1;
+				}
+
+				div {
+					margin-top: 5px;
+					font-size: $font-size - 0.1;
+
+					.esconder {
+						display: none;
+					}
+				}
+			}
+		}
+		
+	}
+
+
+	//corresponde a contacto xs
+	#formulario {
+		@include flex-col-ar;
+		@include centrado-xs;
+		align-items: left;
+		padding-left: 140px;
+
+		.formulario__titulo {
+			font-size: $font-size*2;
+		}
+
+		form {
+	
+			input {
+				width: 250px;
+			}
+
+		textarea {
+				width: 250px;
+			}
 		}
 	}
 }
