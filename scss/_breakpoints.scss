@@ -233,11 +233,9 @@
 	#carouselExampleControls {
 
 		.carousel-item {
-			height: 300px;
 			margin-bottom: $margin - 10;
 
 				img {
-					height: 350px;
 					margin: 0 auto;
 					border-radius: $border;
 			}
@@ -450,12 +448,7 @@
 		@include flex-col-ar;
 
 		.proyectos__card {
-			width: 260px;
 			margin: 20px auto;
-
-			img {
-				height: 220px;
-			}
 		}
 
 		.proyectos__titulo {
@@ -555,18 +548,6 @@
 	}
 
 	//seccion nosotros md
-	.nos__imagen {
-		height: 220px;
-		width: 340px;
-		display: block;
-		margin: auto;
-	}
-
-	.nos__imagen--estilo {
-		height: 220px;
-		width: 340px;
-	}
-
 	#container__nosotros {
 		@include centrado-md;
 
@@ -594,6 +575,7 @@
 
 		.tags {
 			align-items: center;
+			height: 200px;
 		}
 
 		.caja__derecha {

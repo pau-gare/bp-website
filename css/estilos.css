@@ -315,10 +315,9 @@ a {
   line-height: 0.8; }
 
 #carouselExampleControls .carousel-item {
-  height: 400px;
   margin-bottom: 40px; }
   #carouselExampleControls .carousel-item img {
-    height: 400px;
+    width: 70vw;
     margin: 0 auto;
     border-radius: 30px; }
 
@@ -366,15 +365,15 @@ a {
   background-color: #F7EBEC; }
 
 .nos__imagen {
+  max-width: 1000px;
+  margin: auto;
   display: block;
   margin-top: 40px;
-  text-align: center;
-  margin-bottom: 40px; }
-
-.nos__imagen--estilo {
-  border-radius: 30px;
-  height: 400px;
-  width: 675px; }
+  margin-bottom: 40px;
+  text-align: center; }
+  .nos__imagen img {
+    border-radius: 30px;
+    width: 50vw; }
 
 .nos__fondo {
   font-size: 1.7rem;
@@ -752,10 +751,8 @@ p {
       margin-bottom: 40px;
       max-width: 400px; }
   #carouselExampleControls .carousel-item {
-    height: 300px;
     margin-bottom: 30px; }
     #carouselExampleControls .carousel-item img {
-      height: 350px;
       margin: 0 auto;
       border-radius: 30px; }
   #seccion__proyectos {
@@ -896,10 +893,7 @@ p {
     flex-direction: column;
     justify-content: space-around; }
     #proyectos .proyectos__card {
-      width: 260px;
       margin: 20px auto; }
-      #proyectos .proyectos__card img {
-        height: 220px; }
     #proyectos .proyectos__titulo {
       font-size: 1.2rem; }
   #testimonios {
@@ -959,14 +953,6 @@ p {
       height: 250px;
       margin: 0 auto;
       border-radius: 30px; }
-  .nos__imagen {
-    height: 220px;
-    width: 340px;
-    display: block;
-    margin: auto; }
-  .nos__imagen--estilo {
-    height: 220px;
-    width: 340px; }
   #container__nosotros {
     max-width: 625px;
     margin: auto; }
@@ -986,7 +972,8 @@ p {
     #seccion__blog .seccion__blog__titulo {
       margin-top: 0; }
     #seccion__blog .tags {
-      align-items: center; }
+      align-items: center;
+      height: 200px; }
     #seccion__blog .caja__derecha {
       display: flex;
       flex-direction: column;
