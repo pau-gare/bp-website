@@ -876,7 +876,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 950px;
+    height: 1150px;
     align-items: center;
     margin-bottom: 30px; }
     #servicios .servicios__titulos {
@@ -885,8 +885,9 @@ p {
       font-size: 1.2rem;
       height: 30px;
       width: 202px; }
-    #servicios .servicios__descripcion {
-      display: none; }
+    #servicios .servicios__descripcion p {
+      font-size: 1.1rem;
+      margin: 20px auto; }
     #servicios .servicios__imagenes img {
       height: 200px;
       margin: 10px; }
@@ -1005,3 +1006,43 @@ p {
         width: 350px; }
       #formulario form textarea {
         width: 350px; } }
+
+@media all and (max-width: 600px) {
+  #header .header--centrado {
+    max-width: 500px;
+    margin: auto; }
+  #fondo {
+    background-image: url(../media/fondo-md.png); }
+  #portada {
+    max-width: 500px;
+    margin: auto;
+    margin: 20px auto; }
+    #portada .portada__subtitulo--container {
+      max-width: 500px;
+      margin: auto;
+      margin-left: 9vw; }
+    #portada .portada__img {
+      margin-top: 20px;
+      height: 280px; }
+  #modulo {
+    max-width: 500px;
+    margin: auto; }
+    #modulo p {
+      margin: 20px 30px;
+      line-height: 1.4; }
+  #blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #blog .blog__entrada {
+      margin: 0 auto 20px auto;
+      max-width: 300px; }
+    #blog .blog__entrada__titulo {
+      font-size: 1.1rem; }
+    #blog .blog__entrada p {
+      margin-top: 10px; }
+  #contacto {
+    margin: 20px; }
+    #contacto p {
+      font-size: 1.1rem;
+      padding: 0 20px; } }

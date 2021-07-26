@@ -13,6 +13,11 @@
 	margin: $margin-center;
 }
 
+@mixin centrado-xs {
+	max-width: $width-center / 2;
+	margin: $margin-center;
+}
+
 @mixin flex-row-ar {
 	display: flex;
 	flex-direction: row;

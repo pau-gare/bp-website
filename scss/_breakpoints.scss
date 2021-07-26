@@ -424,7 +424,7 @@
 
 	#servicios {
 		@include flex-col-ar;
-		height: 950px;
+		height: 1150px;
 		align-items: center;
 		margin-bottom: 30px;
 
@@ -435,8 +435,9 @@
 			width: 202px;
 		}
 
-		.servicios__descripcion {
-			display: none;
+		.servicios__descripcion p {
+			font-size: $font-size*1.1;
+			margin: $margin - 20 auto;
 		}
 
 		.servicios__imagenes img {
@@ -602,7 +603,7 @@
 		}
 	}
 
-	//corresponde a contacto lg
+	//corresponde a contacto md
 	#formulario {
 		@include flex-col-ar;
 		@include centrado-md;
@@ -624,6 +625,69 @@
 		textarea {
 				width: 350px;
 			}
+		}
+	}
+}
+
+@media all and (max-width: 600px) {
+	#header {
+
+		.header--centrado {
+			@include centrado-xs;
+		}
+	}
+
+	#fondo {
+		background-image: url(../media/fondo-md.png);
+	}
+
+	#portada {
+		@include centrado-xs;
+		margin: $margin / 2 auto;
+
+		.portada__subtitulo--container {
+			@include centrado-xs;
+			margin-left: 9vw;
+		}
+
+		.portada__img {
+	 		margin-top: $margin - 20;
+	 		height: 280px;
+	 	}
+	}
+
+	#modulo {
+		@include centrado-xs;
+
+		p {
+			margin: $margin / 2 30px;
+			line-height: 1.4;
+		}
+	}
+
+	#blog {
+		@include flex-col-ar;
+
+		.blog__entrada {
+			margin: 0 auto $margin / 2 auto;
+			max-width: 300px;
+		}
+
+		.blog__entrada__titulo {
+			font-size:	$font-size*1.1;
+		}
+
+		.blog__entrada p {
+			margin-top: 10px;
+		}
+	}
+
+	#contacto {
+			margin: $margin - 20;
+		
+			p {
+			font-size: $font-size*1.1;
+			padding: 0 20px;
 		}
 	}
 }
