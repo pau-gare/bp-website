@@ -1071,6 +1071,25 @@ p {
     #contacto p {
       font-size: 1.1rem;
       padding: 0 20px; }
+  #carouselExampleControls .carousel-control-prev-icon {
+    height: 20px;
+    width: 20px; }
+  #carouselExampleControls .carousel-control-next-icon {
+    height: 20px;
+    width: 20px; }
+  #seccion__proyectos .seccion__proyectos--fondo {
+    width: 280px;
+    margin: 0 auto; }
+  #seccion__proyectos .seccion__proyectos__titulo {
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 30px; }
+  #seccion__proyectos .seccion__proyectos--fondo2 {
+    width: 400px; }
+    #seccion__proyectos .seccion__proyectos--fondo2 p {
+      width: 380px;
+      padding: 10px; }
   #seccion__blog .caja__derecha {
     display: flex;
     flex-direction: column;
