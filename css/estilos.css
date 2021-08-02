@@ -947,12 +947,36 @@ p {
       padding: 0;
       margin-bottom: 20px; }
   #carouselExampleControls .carousel-item {
-    height: 250px;
     margin-bottom: 30px; }
     #carouselExampleControls .carousel-item img {
-      height: 250px;
       margin: 0 auto;
       border-radius: 30px; }
+  #carouselExampleControls .carousel-control-prev-icon {
+    height: 25px;
+    width: 25px; }
+  #carouselExampleControls .carousel-control-next-icon {
+    height: 25px;
+    width: 25px; }
+  #seccion__proyectos {
+    max-width: 625px;
+    margin: auto;
+    margin-bottom: 30px; }
+    #seccion__proyectos .seccion__proyectos--fondo {
+      width: 280px;
+      margin: 0 auto; }
+    #seccion__proyectos .seccion__proyectos__titulo {
+      padding: 10px;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-top: 30px; }
+    #seccion__proyectos .seccion__proyectos--fondo2 {
+      margin: auto;
+      width: 500px;
+      padding: 10px; }
+      #seccion__proyectos .seccion__proyectos--fondo2 p {
+        width: 480px;
+        font-size: 1rem;
+        padding: 20px; }
   #container__nosotros {
     max-width: 625px;
     margin: auto; }
