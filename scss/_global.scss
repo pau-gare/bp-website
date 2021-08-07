@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+div {
+	box-sizing: border-box;
+}
+
 #fondo {
 	background-image: url(../media/fondo-08.png);
 	background-repeat: no-repeat;
@@ -72,7 +76,7 @@ a {
 }
 
 #portada {
-	margin-top: 80px;
+	margin-top: $margin*1.5;
 	@include flex-row-ar;
 
 	.portada__izq {
@@ -246,7 +250,6 @@ a {
 }
 
 #blog {
-	margin-bottom: 60px;
 	@include flex-row-be;
 
 	.blog__entrada {
@@ -256,7 +259,7 @@ a {
 		border-radius: $border;
 		padding: 20px 20px 30px 20px;
 		max-width: 430px;
-		max-height: 100px;
+		max-height: 170px;
 	}
 
 	.blog__entrada__titulo {
@@ -275,7 +278,7 @@ a {
 		}
 
 	.blog__entrada__parrafo--margin {
-		margin-top: 40px;
+		margin-top: 5px;
 	}
 }
 
@@ -365,6 +368,7 @@ a {
 
 			img {
 				width: 70vw;
+				min-width: 300px;
 				margin: 0 auto;
 				border-radius: $border;
 			}
@@ -400,13 +404,11 @@ a {
 		font-size: $font-size*1.7;
 		font-weight: 400;
 		text-align: center;
-		margin-top: $margin;
 	}
 
 	.seccion__proyectos--fondo2 {
 		padding: 20px;
 		border-radius: 0 0 30px 30px;
-		margin-bottom: 80px;
 		border-style: solid;
 		border-width: 2px;
 		border-color: $color-fg;
@@ -436,6 +438,7 @@ a {
 	img {
 		border-radius: 30px;
 		width: 50vw;
+		min-width: 380px;
 	}
 	
 }
@@ -499,9 +502,7 @@ p {
 
 #seccion__blog {
 	@include centrado;
-	display: grid;
-	grid-template-columns: 20vw 60vw;
-	justify-content: space-around;
+	@include flex-row-ar;
 	margin-top: $margin;
 	margin-bottom: $margin;
 
@@ -537,7 +538,6 @@ p {
 		}
 }
 
-
 	.seccion__blog__titulo {
 		margin-top: $margin;
 		font-family: $fuente-roboto;
@@ -547,7 +547,7 @@ p {
 		}
 
 	.caja__derecha {
-		margin: $margin 0px;
+		margin: $margin 0px $margin $margin*1.5;
 		font-family: $fuente-sans;
 		display: grid;
 		grid-template-areas: 
@@ -651,7 +651,7 @@ p {
 }
 
 #contacto {
-	margin: $margin*2 auto;
+	margin: $margin*1.5 auto;
 
 	p {
 		@include centrado;
@@ -697,7 +697,6 @@ p {
 	background-color: $color-cg;
 	font-family: $fuente-poppins;
 	font-weight: bold;
-	font-size: $font-size*1.2;
 	max-width: 100vw;
 	@include flex-row-ar;
 	align-items: center;
@@ -714,6 +713,7 @@ p {
 	.footer__columna__1__menu {
 
 		p {
+			font-size: $font-size*1.2;
 			text-align: left;
 			margin-bottom: 20px;
 		}
@@ -725,6 +725,7 @@ p {
 
 	.footer__columna__2 {
 		p {
+			font-size: $font-size*1.2;
 			margin-bottom: 50px;
 		} 
 
