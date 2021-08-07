@@ -353,10 +353,6 @@ a {
 	text-decoration: $text-decoration;
 }
 
-.footer__columna__1__menu--line {
-	line-height: 0.8;
-}
-
 
 //corresponde a seccion proyectos
 .titulo__proyectos {
@@ -709,31 +705,34 @@ p {
 	.footer__columna__1 {
 		width: 20vw;
 		@include flex-row-be;
-	}
+
 		img {
 			height: 40px;
 		}
+	}
 
-	.footer__columna__1__menu 
+	.footer__columna__1__menu {
 
 		p {
 			text-align: left;
+			margin-bottom: 20px;
 		}
 
 		a {
 		color: $color-an;
+		}
 	}
 
 	.footer__columna__2 {
 		p {
-			margin-bottom: 60px;
+			margin-bottom: 50px;
 		} 
 
 		img {
 			height: 30px;
 			margin-top: 10px;
+		}
 	}
-}
 
 	.footer__columna__1__menu--hover {
 		text-decoration: $text-decoration;

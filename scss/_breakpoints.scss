@@ -664,6 +664,23 @@
 			}
 		}
 	}
+
+	//footer md
+	#footer {
+
+		.footer__columna__1 {
+			@include flex-col-ar;
+			align-items: center;
+
+			img {
+				margin-bottom: 20px;
+			}
+
+			.footer__columna__1__menu p {
+				text-align: center;
+			}
+		}
+	}
 }
 
 //breakpoint xs
