@@ -1162,4 +1162,8 @@ p {
   .card-body img {
     height: 220px; }
   .parrafo--estilo p {
-    width: 300px; } }
+    width: 300px; }
+  #seccion__proyectos .seccion__proyectos--fondo2 {
+    width: 320px; }
+    #seccion__proyectos .seccion__proyectos--fondo2 p {
+      width: 300px; } }
