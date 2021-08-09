@@ -1154,4 +1154,12 @@ p {
     display: none; }
   #contacto {
     max-width: 350.87719px;
-    margin: auto; } }
+    margin: auto; }
+  .titulo__servicios, .titulo__proyectos {
+    font-size: 1.8rem; }
+  .btn {
+    width: 220px; }
+  .card-body img {
+    height: 220px; }
+  .parrafo--estilo p {
+    width: 300px; } }

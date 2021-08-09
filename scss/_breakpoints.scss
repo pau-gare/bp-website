@@ -847,6 +847,7 @@
 //breakpoint xxs
 @media all and (max-width: 400px) {
 
+	//corresponde a index xxs
 	#portada {
 		.portada__titulo {
 			font-size: $font-size*2.1;
@@ -881,6 +882,23 @@
 
 	#contacto {
 		@include centrado-xxs;
+	}
+
+	//corresponde a servicios xxs
+	.titulo__servicios {
+		font-size: $font-size*1.8;
+	}
+
+	.btn {
+		width: 220px;
+	}
+
+	.card-body img {
+		height: 220px;
+	}
+
+	.parrafo--estilo p {
+		width: 300px;
 	}
 
 }
