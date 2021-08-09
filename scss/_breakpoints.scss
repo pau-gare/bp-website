@@ -844,3 +844,44 @@
 	}
 }
 
+//breakpoint xxs
+@media all and (max-width: 400px) {
+
+	#portada {
+		.portada__titulo {
+			font-size: $font-size*2.1;
+		}
+
+		.portada__subtitulo--container {
+			margin-left: 0;
+		}
+
+		.portada__img {
+			margin-top: 60px;
+		}
+	}
+
+	#modulo {
+		@include centrado-xxs;
+	}
+
+	.subtitulo {
+		font-size: $font-size*1.8;
+	}
+
+	#testimonios {
+		@include centrado-xxs;
+	}
+
+	#blog {
+		.esconder {
+			display: none;
+		}
+	}
+
+	#contacto {
+		@include centrado-xxs;
+	}
+
+}
+

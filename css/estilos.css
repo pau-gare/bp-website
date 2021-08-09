@@ -1134,3 +1134,24 @@ p {
       width: 250px; }
     #formulario form textarea {
       width: 250px; } }
+
+@media all and (max-width: 400px) {
+  #portada .portada__titulo {
+    font-size: 2.1rem; }
+  #portada .portada__subtitulo--container {
+    margin-left: 0; }
+  #portada .portada__img {
+    margin-top: 60px; }
+  #modulo {
+    max-width: 350.87719px;
+    margin: auto; }
+  .subtitulo {
+    font-size: 1.8rem; }
+  #testimonios {
+    max-width: 350.87719px;
+    margin: auto; }
+  #blog .esconder {
+    display: none; }
+  #contacto {
+    max-width: 350.87719px;
+    margin: auto; } }

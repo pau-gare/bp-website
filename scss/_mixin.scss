@@ -18,6 +18,11 @@
 	margin: $margin-center;
 }
 
+@mixin centrado-xxs {
+	max-width: $width-center / 2.85;
+	margin: $margin-center;
+}
+
 @mixin flex-row-ar {
 	display: flex;
 	flex-direction: row;
