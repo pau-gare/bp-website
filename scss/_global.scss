@@ -7,11 +7,6 @@ div {
 	box-sizing: border-box;
 }
 
-#fondo {
-	background-image: url(../media/fondo-08.png);
-	background-repeat: no-repeat;
-}
-
 .centrado {
 	@include centrado;
 }
@@ -32,4 +27,3 @@ h2 {
 a {
 	text-decoration: $text-decoration;
 }
-

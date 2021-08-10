@@ -58,15 +58,6 @@
 	color: $color-wb;
 }
 
-@mixin subtitulo-lg {
-	font-family: $fuente-sans;
-	font-size: $font-size*1.2;
-	text-align: center;
-	margin: $margin - 10;
-	color: $color-wb;
-	padding: 5px;
-}
-
 @mixin subtitulo-md {
 	font-family: $fuente-sans;
 	font-size: $font-size*2;

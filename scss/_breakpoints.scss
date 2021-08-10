@@ -326,7 +326,6 @@
 	text-decoration: $text-decoration;
 }
 
-
 //corresponde a seccion proyectos
 .titulo__proyectos {
 	@extend .titulo__servicios;
@@ -453,7 +452,7 @@
 				0% {opacity:0;}
 				70% {opacity:1;}
 				100% {opacity:1;}
-				}
+			}
 }
 
 p {
@@ -506,7 +505,7 @@ p {
 			border-radius: $border;
 			width: 75px;
 		}
-}
+	}
 
 	.seccion__blog__titulo {
 		margin-top: $margin;
@@ -768,10 +767,10 @@ p {
 	}
 
 	.subtitulo {
-			font-size: $font-size*2.1;
-			margin-top: $margin + 20;
-			margin-bottom: $margin;
-		}
+		font-size: $font-size*2.1;
+		margin-top: $margin + 20;
+		margin-bottom: $margin;
+	}
 
 	#servicios {
 		@include centrado-lg;
@@ -860,6 +859,7 @@ p {
 				margin-top: 0px;
 				font-size: $font-size - 0.1;
 			}
+
 		.blog__entrada__parrafo--margin {
 			margin-top: 0px;
 		}
@@ -1532,7 +1532,6 @@ p {
 			}
 		}	
 	}
-
 
 	//corresponde a contacto xs
 	#formulario {
