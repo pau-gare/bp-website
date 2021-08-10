@@ -621,6 +621,7 @@
 
 		.caja__derecha {
 			@include flex-col-ar;
+			margin: $margin 0px $margin 0px;
 			
 			article {
 				height: 100px;
@@ -912,5 +913,33 @@
 			}
 		}
 	}
+
+	//corresponde a seccion nosotros xxs 
+	#container__nosotros p {
+		width: 300px;
+	}
+
+	#contacto p {
+		margin-top: 30px;
+	}
+
+	//corresponde a seccion blog xxs {
+		#seccion__blog {
+			.seccion__blog__titulo {
+				font-size: $font-size*2.6;
+			}
+
+			.caja__derecha article {
+    			width: 220px;
+    			height: 120px;
+    		}
+
+    		.esconder {
+    			display: none;
+    		}
+
+
+	}
 }
+
 

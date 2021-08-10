@@ -372,7 +372,7 @@ a {
   .nos__imagen img {
     border-radius: 30px;
     width: 50vw;
-    min-width: 380px; }
+    min-width: 320px; }
 
 .nos__fondo {
   font-size: 1.7rem;
@@ -1007,7 +1007,8 @@ p {
     #seccion__blog .caja__derecha {
       display: flex;
       flex-direction: column;
-      justify-content: space-around; }
+      justify-content: space-around;
+      margin: 40px 0px 40px 0px; }
       #seccion__blog .caja__derecha article {
         height: 100px;
         width: 400px; }
@@ -1166,4 +1167,15 @@ p {
   #seccion__proyectos .seccion__proyectos--fondo2 {
     width: 320px; }
     #seccion__proyectos .seccion__proyectos--fondo2 p {
-      width: 300px; } }
+      width: 300px; }
+  #container__nosotros p {
+    width: 300px; }
+  #contacto p {
+    margin-top: 30px; }
+  #seccion__blog .seccion__blog__titulo {
+    font-size: 2.6rem; }
+  #seccion__blog .caja__derecha article {
+    width: 220px;
+    height: 120px; }
+  #seccion__blog .esconder {
+    display: none; } }
