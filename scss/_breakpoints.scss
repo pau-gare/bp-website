@@ -648,7 +648,7 @@
 		@include flex-col-ar;
 		@include centrado-md;
 		align-items: left;
-		padding-left: 200px;
+		padding-left: 150px;
 
 		.formulario__titulo {
 			font-size: $font-size*2.2;
@@ -659,6 +659,7 @@
 		form {
 			font-size: $font-size*1;
 			margin-top: $margin / 2;
+			margin-bottom: 50px;
 
 			input {
 				width: 350px;
@@ -924,21 +925,43 @@
 	}
 
 	//corresponde a seccion blog xxs {
-		#seccion__blog {
-			.seccion__blog__titulo {
-				font-size: $font-size*2.6;
+	#seccion__blog {
+		.seccion__blog__titulo {
+			font-size: $font-size*2.6;
+		}
+
+		.caja__derecha article {
+    		width: 220px;
+    		height: 120px;
+    	}
+
+    	.esconder {
+    		display: none;
+    	}
+
+	}
+
+	#formulario {
+		padding-left: 90px;
+
+		.formulario__titulo {
+			font-size: $font-size*2;
+			width: 52vw;
+			margin-top: $margin / 2;
+			margin-bottom: $margin / 2;
+		}
+
+		form {
+			font-size: $font-size*1;
+
+			input {
+				width: 210px;
 			}
 
-			.caja__derecha article {
-    			width: 220px;
-    			height: 120px;
-    		}
-
-    		.esconder {
-    			display: none;
-    		}
-
-
+		textarea {
+				width: 210px;
+			}
+		}
 	}
 }
 

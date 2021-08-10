@@ -1026,14 +1026,15 @@ p {
     max-width: 625px;
     margin: auto;
     align-items: left;
-    padding-left: 200px; }
+    padding-left: 150px; }
     #formulario .formulario__titulo {
       font-size: 2.2rem;
       width: 52vw;
       margin-top: 20px; }
     #formulario form {
       font-size: 1rem;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-bottom: 50px; }
       #formulario form input {
         width: 350px; }
       #formulario form textarea {
@@ -1178,4 +1179,17 @@ p {
     width: 220px;
     height: 120px; }
   #seccion__blog .esconder {
-    display: none; } }
+    display: none; }
+  #formulario {
+    padding-left: 90px; }
+    #formulario .formulario__titulo {
+      font-size: 2rem;
+      width: 52vw;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    #formulario form {
+      font-size: 1rem; }
+      #formulario form input {
+        width: 210px; }
+      #formulario form textarea {
+        width: 210px; } }
