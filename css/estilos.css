@@ -612,6 +612,10 @@ p {
   #footer .footer__columna__2 img {
     height: 30px;
     margin-top: 10px; }
+  #footer .footer__columna__2 a {
+    color: #E3B23C; }
+  #footer .footer__columna__2 a:hover {
+    color: #E3B23C; }
   #footer .footer__columna__1__menu--hover {
     text-decoration: none; }
 

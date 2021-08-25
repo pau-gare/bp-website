@@ -703,7 +703,7 @@ p {
 		}
 
 		a {
-		color: $color-an;
+			color: $color-an;
 		}
 	}
 
@@ -716,6 +716,14 @@ p {
 		img {
 			height: 30px;
 			margin-top: 10px;
+		}
+
+		a {
+			color: $color-an;
+		}
+
+		a:hover {
+			color: $color-an;
 		}
 	}
 
