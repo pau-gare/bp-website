@@ -152,7 +152,8 @@ a {
     border: 2px solid #E3B23C;
     padding-top: 11px; }
     #servicios .servicios__titulos a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #0E0E0E; }
   #servicios .servicios__titulos:hover {
     transition: 250ms ease-out;
     background-color: #7676B6;
