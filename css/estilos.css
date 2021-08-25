@@ -54,6 +54,8 @@ a {
       #header .navbar-expand-lg .navbar-nav a:hover {
         transition: 250ms ease-out;
         color: #E3B23C; }
+  #header #navbarSupportedContent {
+    z-index: 8; }
 
 #fondo {
   background-image: url(../media/fondo-10.png);
