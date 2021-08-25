@@ -150,7 +150,9 @@ a {
     border-radius: 30px;
     background-color: #E3B23C;
     border: 2px solid #E3B23C;
-    padding: 11px; }
+    padding-top: 11px; }
+    #servicios .servicios__titulos a {
+      text-decoration: none; }
   #servicios .servicios__titulos:hover {
     transition: 250ms ease-out;
     background-color: #7676B6;
@@ -188,6 +190,8 @@ a {
     font-size: 1.4rem;
     text-align: center;
     color: #0E0E0E; }
+  #proyectos a {
+    text-decoration: none; }
 
 #testimonios {
   display: flex;
@@ -219,17 +223,21 @@ a {
     padding: 20px 20px 30px 20px;
     max-width: 430px;
     max-height: 170px; }
+    #blog .blog__entrada a {
+      text-decoration: none; }
   #blog .blog__entrada__titulo {
     color: #EA516F;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    line-height: 1.5rem; }
   #blog p {
     margin-top: 10px;
     color: #0E0E0E;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    text-align: left; }
+    text-align: left;
+    line-height: 1.4rem; }
   #blog .blog__entrada__parrafo--margin {
     margin-top: 5px; }
 

@@ -61,7 +61,6 @@
 		font-weight: 300;
    	}
 
-
  	.portada__subtitulo {
  		position: absolute;
  		left: start;
@@ -135,7 +134,11 @@
 		border-radius: $border;
 		background-color: $color-an;
 		border: 2px solid $color-an;
-		padding: 11px; 
+		padding-top: 11px; 
+
+			a {
+				text-decoration: none;
+			}
 	}
 
 	.servicios__titulos:hover {
@@ -191,6 +194,10 @@
 		text-align: center;
 		color: $color-cg;
 	}
+
+	a {
+		text-decoration: none;
+	}
 }
 
 #testimonios {
@@ -227,6 +234,10 @@
 		padding: 20px 20px 30px 20px;
 		max-width: 430px;
 		max-height: 170px;
+
+		a {
+			text-decoration: none;
+		}
 	}
 
 	.blog__entrada__titulo {
@@ -234,6 +245,7 @@
 		font-family: $fuente-roboto;
 		font-weight: bold;
 		font-size:	$font-size*1.4;
+		line-height: $font-size*1.5;
 	}
 
 		p {
@@ -242,6 +254,7 @@
 			font-family: $fuente-sans;
 			font-size: $font-size;
 			text-align: left;
+			line-height: $font-size*1.4;
 		}
 
 	.blog__entrada__parrafo--margin {
