@@ -2,41 +2,34 @@
 	background-color: $color-wb;
 	font-family: $fuente-poppins;
 	width: 100vw;
-	height: 80px;
-
-	.header--centrado {
-		@include flex-row-ar;
-		@include centrado;
-		align-items: center;
-	}
+	height: 70px;
 
 	.header__logo {
 		height: 40px;
-		margin-top: 20px
 	}
 
-	.header__menu {
-		font-size: $font-size*1.2;
-		font-weight: medium;
-		width: 50vw;
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		margin-left: $margin-center;
-		margin-top: 20px;
-	}
+	.navbar-expand-lg {
+		@include centrado;
 
-		a {
-		color: $color-cg;
-	}
+		.navbar-nav {
+			margin-left: 20vw;
+			background-color: $color-wb; 
 
-		a:hover {
-		transition: $transition;
-		color: $color-an;
-	}
+			li {
+				padding-left: 20px
+			}
 
-	.header__menu-mobile {
-		display: none;
+			a {
+				font-size: $font-size*1.2;
+				font-weight: medium;
+				color: $color-cg
+			}
+
+			a:hover {
+			transition: $transition;
+			color: $color-an;
+			}
+		}
 	}
 }
 
@@ -483,27 +476,28 @@ p {
 
 		a {
 			color: $color-cg;
+			text-decoration: none;
 		}
 
 		.tags__1 {
 			padding: 3px;
 			border: 2px solid $color-cg;
 			border-radius: $border;
-			width: 70px;
+			width: 80px;
 		}
 
 		.tags__2 {
 			padding: 3px;
 			border: 2px solid $color-cg;
 			border-radius: $border;
-			width: 90px;
+			width: 100px;
 		}
 
 		.tags__3 {
 			padding: 3px;
 			border: 2px solid $color-cg;
 			border-radius: $border;
-			width: 75px;
+			width: 85px;
 		}
 	}
 
@@ -518,6 +512,7 @@ p {
 	.caja__derecha {
 		margin: $margin 0px $margin $margin*1.5;
 		font-family: $fuente-sans;
+		line-height: $font-size*1.2;
 		display: grid;
 		grid-template-areas: 
 			"entrada1 entrada1"
@@ -570,6 +565,7 @@ p {
 	font-family: $fuente-roboto;
 	font-weight: bold;
 	font-size:	1.4em;
+	line-height: $font-size*1.5;
 }
 
 //corresponde a contacto
@@ -648,6 +644,7 @@ p {
 
 	a {
 		color: $color-cg;
+		text-decoration: none;
 	}
 
 	.contacto__boton:hover {
@@ -718,16 +715,12 @@ p {
 	
 	#header {
 
-		.header--centrado {
-			@include centrado-lg;
-		}
+		.navbar-expand-lg {
+		@include centrado-lg;
 
-		.header__menu {
-			align-content: right;
-		}
-
-		.header__menu__item {
-			margin: 0 10px;
+			button img {
+				height: 30px;
+			}
 		}
 	}
 
@@ -1048,25 +1041,9 @@ p {
 @media all and (max-width: 768px) {
 	
 	#header {
-		height: 60px;
 
-		.header--centrado {
+		.navbar-expand-lg {
 			@include centrado-md;
-		}
-
-		.header__logo {
-			height: 35px;
-			margin-top: 10px;
-		}
-
-		.header__menu-mobile {
-			display: inline-block;
-			height: 35px;
-			margin-top: 10px;
-		}
-
-		.header__menu {
-			display: none;
 		}
 	}
 
@@ -1336,7 +1313,7 @@ p {
 			margin: $margin 0px $margin 0px;
 			
 			article {
-				height: 100px;
+				height: 130px;
 				width: 400px;
 
 				h2 {
@@ -1411,7 +1388,7 @@ p {
 @media all and (max-width: 600px) {
 	#header {
 
-		.header--centrado {
+		.navbar-expand-lg {
 			@include centrado-xs;
 		}
 	}
@@ -1514,7 +1491,7 @@ p {
 			margin-top: $margin / 2;
 			
 			article {
-				height: 100px;
+				height: 140px;
 				width: 300px;
 
 				h2 {
@@ -1563,6 +1540,13 @@ p {
 	//corresponde a index xxs
 	#fondo {
 		background-image: url(../media/fondo-13.png);
+	}
+
+	#header {
+
+		.navbar-expand-lg {
+			@include centrado-xxs;
+		}
 	}
 
 	#portada {
@@ -1647,7 +1631,7 @@ p {
 
 		.caja__derecha article {
     		width: 220px;
-    		height: 120px;
+    		height: 190px;
     	}
 
     	.esconder {
@@ -1679,5 +1663,3 @@ p {
 		}
 	}
 }
-
-
